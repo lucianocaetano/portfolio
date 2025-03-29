@@ -42,9 +42,7 @@ export default function Page() {
       <div className="pt-[100px]">
         <HeroSectionHome/>
       </div>
-  
       <Footer/>
-
       <ShootingStars />
       <StarsBackground />
     </div>
