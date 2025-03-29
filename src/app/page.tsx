@@ -55,7 +55,7 @@ export default function Page() {
         <HeroSectionHome/>
       </div>
       <h1>
-        Hola mundo
+        Hola
       </h1>
   
       <Footer/>
