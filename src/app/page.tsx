@@ -54,8 +54,12 @@ export default function Page() {
       <div className="pt-[100px]">
         <HeroSectionHome/>
       </div>
+      <h1>
+        Hola mundo
+      </h1>
   
       <Footer/>
+
 
       <ShootingStars />
       <StarsBackground />
