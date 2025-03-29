@@ -1,12 +1,13 @@
-import { ModeToggle } from "../../ui/mode-toggle";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 import {
   Footer,
   FooterColumn,
   FooterBottom,
   FooterContent,
-} from "../../ui/footer";
-import LaunchUI from "../../logos/launch-ui";
+} from "@/components/ui/footer";
+import LaunchUI from "@/components/logos/launch-ui";
 import { ReactNode } from "react";
+import {ContactForm} from "@/components/contact-form";
 
 interface FooterLink {
   text: string;
@@ -29,36 +30,30 @@ interface FooterProps {
 
 export default function FooterSection({
   logo = <LaunchUI />,
-  name = "Launch UI",
+  name = "Portfolio",
   columns = [
     {
-      title: "Product",
+      title: "Links",
       links: [
-        { text: "Changelog", href: "https://www.launchuicomponents.com/" },
-        { text: "Documentation", href: "https://www.launchuicomponents.com/" },
+        { text: "Home", href: "/" },
+        { text: "About-at", href: "/about-at" },
+        { text: "Contact", href: "/contact" },
       ],
     },
     {
-      title: "Company",
+      title: "Staff",
       links: [
-        { text: "About", href: "https://www.launchuicomponents.com/" },
-        { text: "Careers", href: "https://www.launchuicomponents.com/" },
-        { text: "Blog", href: "https://www.launchuicomponents.com/" },
+        { text: "Sara", href: "/contact" },
+        { text: "German", href: "/contact" },
+        { text: "Luciano", href: "/contact" },
+        { text: "Mauro", href: "/contact" },
+        { text: "Santif", href: "/contact" },
       ],
     },
-    {
-      title: "Contact",
-      links: [
-        { text: "Discord", href: "https://www.launchuicomponents.com/" },
-        { text: "Twitter", href: "https://www.launchuicomponents.com/" },
-        { text: "Github", href: "https://www.launchuicomponents.com/" },
-      ],
-    },
+
   ],
-  copyright = "© 2025 Mikołaj Dobrucki. All rights reserved",
+  copyright = "© 2025 Portfolio fullstack developers. All rights reserved",
   policies = [
-    { text: "Privacy Policy", href: "https://www.launchuicomponents.com/" },
-    { text: "Terms of Service", href: "https://www.launchuicomponents.com/" },
   ],
   showModeToggle = true,
 }: FooterProps) {
@@ -67,7 +62,7 @@ export default function FooterSection({
       <div className="max-w-container mx-auto">
         <Footer>
           <FooterContent>
-            <FooterColumn className="col-span-2 sm:col-span-3 md:col-span-1">
+            <FooterColumn className="col-span-2 sm:col-span-4 md:col-span-4">
               <div className="flex items-center gap-2">
                 {logo}
                 <h3 className="text-xl font-bold">{name}</h3>
@@ -87,6 +82,9 @@ export default function FooterSection({
                 ))}
               </FooterColumn>
             ))}
+            <FooterColumn className="flex justify-center items-center">
+              <ContactForm/>
+            </FooterColumn>
           </FooterContent>
           <FooterBottom>
             <div>{copyright}</div>

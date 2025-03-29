@@ -2,7 +2,7 @@ import {ShootingStars} from "@/components/ui/shooting-stars"
 import Navbar from "./(portfolio)/components/navbar"
 import HeroSectionHome from "./components/HeroSectionHome"
 import {StarsBackground} from "@/components/ui/stars-background"
-import {Footer} from "@/components/ui/footer"
+import Footer from "./(portfolio)/components/footer"
 
 export const metadata = {
   title: {
@@ -26,22 +26,10 @@ export const metadata = {
       es: "Creamos sitios web de alto rendimiento con las mejores tecnologías. ¡Cotiza tu proyecto con nosotros!",
       en: "We create high-performance websites with the best technologies. Get a quote for your project with us!",
     },
-    url: "https://tudominio.com",
     siteName: {
-      es: "Tu Agencia Web",
-      en: "Your Web Agency",
+      es: "portfolio desarrollo web fullstack",
+      en: "portfolio fullstack developers",
     },
-    images: [
-      {
-        url: "https://tudominio.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: {
-          es: "Agencia de desarrollo web",
-          en: "Web development agency",
-        },
-      },
-    ],
     type: "website",
   },
 };
