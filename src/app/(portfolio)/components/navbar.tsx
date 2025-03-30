@@ -12,7 +12,7 @@ import Link from "next/link"
 const Navbar = () => {
 
   return (
-    <nav className="fixed z-20 w-full bg-white dark:bg-black"> 
+    <nav className="fixed z-20 w-full"> 
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center h-16 px-4">
         <NavigationMenu>
           <NavigationMenuList>
