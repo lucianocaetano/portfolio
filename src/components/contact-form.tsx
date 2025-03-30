@@ -15,7 +15,7 @@ import {Textarea} from "./ui/textarea"
 
 export function ContactForm() {
   return (
-    <Card className="w-[350px]">
+    <Card className="max-w-[300px]">
       <CardHeader>
         <CardTitle>Contact</CardTitle>
       </CardHeader>

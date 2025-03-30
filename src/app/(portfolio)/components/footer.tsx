@@ -62,7 +62,7 @@ export default function FooterSection({
       <div className="max-w-container mx-auto">
         <Footer>
           <FooterContent>
-            <FooterColumn className="col-span-2 sm:col-span-4 md:col-span-4">
+            <FooterColumn>
               <div className="flex items-center gap-2">
                 {logo}
                 <h3 className="text-xl font-bold">{name}</h3>
@@ -82,7 +82,7 @@ export default function FooterSection({
                 ))}
               </FooterColumn>
             ))}
-            <FooterColumn className="flex justify-center items-center">
+            <FooterColumn>
               <ContactForm/>
             </FooterColumn>
           </FooterContent>
