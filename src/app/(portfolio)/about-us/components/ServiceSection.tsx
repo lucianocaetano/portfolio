@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import {cn} from "@/lib/utils";
 
 const ServiceSection = () => {
 
   return (
    <div className="max-w-2xl mx-auto antialiased pt-4 px-8">
         {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10 grid ">
-           
+          <div key={`content-${index}`} className={cn("mb-10 md:flex my-20 gap-8", index % 2 === 0 ? "md:flex-row-reverse" : "")}>
             <div className="text-sm  prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
@@ -16,7 +16,7 @@ const ServiceSection = () => {
                   alt="blog thumbnail"
                   height="1000"
                   width="1000"
-                  className="rounded-lg mb-10 object-cover"
+                  className="rounded-lg mb-10 object-cover h-full"
                 />
               )}
             </div>
