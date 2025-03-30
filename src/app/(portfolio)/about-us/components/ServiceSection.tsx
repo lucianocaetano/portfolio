@@ -5,17 +5,10 @@ import Image from "next/image";
 const ServiceSection = () => {
 
   return (
-   <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+   <div className="max-w-2xl mx-auto antialiased pt-4 px-8">
         {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
-            </h2>
- 
-            <p>
-              {item.title}
-            </p>
- 
+          <div key={`content-${index}`} className="mb-10 grid ">
+           
             <div className="text-sm  prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
@@ -26,6 +19,11 @@ const ServiceSection = () => {
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
+            </div>
+            <div>
+              <p>
+                {item.title}
+              </p>
               {item.description}
             </div>
           </div>

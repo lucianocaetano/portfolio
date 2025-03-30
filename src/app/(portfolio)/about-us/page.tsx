@@ -5,12 +5,12 @@ import ServiceSection from './components/ServiceSection'
 const AboutPage: React.FC = () => {
   return (
     <div>
-        <HeroSection />
-      <div className='absolute bg-white dark:bg-zinc-900 w-full py-16'>
-        <TracingBeam>
-          <ServiceSection/>
-        </TracingBeam>
-      </div>
+      <HeroSection />
+      <TracingBeam
+        className='bg-white dark:bg-zinc-900 w-full h-full py-16'
+      >
+        <ServiceSection/>
+      </TracingBeam>
     </div>
   )
 }
