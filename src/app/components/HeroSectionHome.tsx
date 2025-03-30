@@ -67,7 +67,7 @@ export default function HeroSectionHome() {
           }}
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <Button onClick={()=>router.push('/about-at')}>
+          <Button onClick={()=>router.push('/about-us')}>
             About
           </Button>
           <Button variant={'outline'} onClick={()=>router.push('/contact')}>
@@ -91,7 +91,6 @@ export default function HeroSectionHome() {
         >
           <div className="w-full overflow-hidden rounded-xl">
             <BannerImageSection/>
-            
           </div>
         </motion.div>
       </div>

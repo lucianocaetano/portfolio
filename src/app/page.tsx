@@ -38,7 +38,6 @@ export default function Page() {
   return (
      <div>
       <Navbar/>
-
       <div className="pt-[100px]">
         <HeroSectionHome/>
       </div>

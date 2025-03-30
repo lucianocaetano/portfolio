@@ -12,7 +12,7 @@ import Link from "next/link"
 const Navbar = () => {
 
   return (
-    <nav className="fixed z-20 w-full"> 
+    <nav className="fixed z-20 w-full bg-white dark:bg-black"> 
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center h-16 px-4">
         <NavigationMenu>
           <NavigationMenuList>
@@ -24,7 +24,7 @@ const Navbar = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about-at" legacyBehavior passHref>
+              <Link href="/about-us" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   About at  
                 </NavigationMenuLink>
