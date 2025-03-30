@@ -65,10 +65,28 @@ export const HeroSection = ({
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+    console.log('hola')
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth)
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div
       ref={ref}
-      className="flex min-h-[200vh] shrink-0 transform flex-col items-center justify-start md:pt-60 [perspective:800px] scale-80 md:scale-100"
+      className={cn("flex min-h-[140vh] sm:min-h-[150vh] md:min-h-[200vh] shrink-0 transform flex-col items-center justify-start md:pt-60 [perspective:800px]",
+          screenWidth < 640
+            ? "scale-60"
+            : screenWidth < 768
+            ? "scale-80"
+            : "scale-100"
+      )}
     >
       <motion.h2
         style={{
