@@ -1,4 +1,3 @@
-import { ModeToggle } from "@/components/ui/mode-toggle";
 import {
   Footer,
   FooterColumn,
@@ -7,7 +6,7 @@ import {
 } from "@/components/ui/footer";
 import LaunchUI from "@/components/logos/launch-ui";
 import { ReactNode } from "react";
-import {ContactForm} from "@/components/contact-form";
+import { ContactForm } from "@/components/contact-form";
 
 interface FooterLink {
   text: string;
@@ -55,7 +54,6 @@ export default function FooterSection({
   copyright = "© 2025 Portfolio fullstack developers. All rights reserved",
   policies = [
   ],
-  showModeToggle = true,
 }: FooterProps) {
   return (
     <footer className="bg-background w-full px-4">
@@ -83,7 +81,7 @@ export default function FooterSection({
               </FooterColumn>
             ))}
             <FooterColumn className="flex justify-center items-center">
-              <ContactForm/>
+              <ContactForm />
             </FooterColumn>
           </FooterContent>
           <FooterBottom>
@@ -94,7 +92,6 @@ export default function FooterSection({
                   {policy.text}
                 </a>
               ))}
-              {showModeToggle && <ModeToggle />}
             </div>
           </FooterBottom>
         </Footer>
