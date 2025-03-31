@@ -1,6 +1,7 @@
 import {TracingBeam} from '@/components/ui/tracing-beam'
 import { HeroSection } from './components/HeroSection'
 import ServiceSection from './components/ServiceSection'
+import ProjectExampleSection from './components/ProjectExampleSection'
 
 const AboutPage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage: React.FC = () => {
       >
         <ServiceSection/>
       </TracingBeam>
+      <ProjectExampleSection/>
     </div>
   )
 }

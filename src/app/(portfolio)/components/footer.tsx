@@ -47,7 +47,7 @@ export default function FooterSection({
         { text: "German", href: "/contact" },
         { text: "Luciano", href: "/contact" },
         { text: "Mauro", href: "/contact" },
-        { text: "Santif", href: "/contact" },
+        { text: "Santiago", href: "/contact" },
       ],
     },
 

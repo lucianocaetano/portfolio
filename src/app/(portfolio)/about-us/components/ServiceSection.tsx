@@ -20,10 +20,10 @@ const ServiceSection = () => {
                 />
               )}
             </div>
-            <div>
-              <p>
+            <div className="max-w-[400px] flex flex-col gap-8">
+              <h1 className="text-2xl font-bold">
                 {item.title}
-              </p>
+              </h1>
               {item.description}
             </div>
           </div>
@@ -34,13 +34,9 @@ const ServiceSection = () => {
 
 const dummyContent = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Frontend and SEO",
     description: (
       <>
-        <h1 className="text-h1">
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-        </h1>
         <p>
           Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
           reprehenderit deserunt amet laborum consequat adipisicing officia qui
@@ -55,7 +51,7 @@ const dummyContent = [
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Documented Rest APIs",
     description: (
       <>
         <p>
@@ -79,7 +75,7 @@ const dummyContent = [
       "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Responsive Design",
     description: (
       <>
         <p>
