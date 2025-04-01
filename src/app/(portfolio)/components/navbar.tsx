@@ -5,39 +5,43 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
+
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import Link from "next/link"
 
-interface NavLinkProps {
-  href: string
-  children: React.ReactNode
-}
-
-const NavLink = ({ href, children }: NavLinkProps) => {
-  return (
-    <NavigationMenuItem>
-      <Link href={href} legacyBehavior passHref>
-        <NavigationMenuLink className="text-base font-semibold px-4 tracking-wider">
-          {children}
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
-  );
-}
-
 const Navbar = () => {
+
   return (
-    <NavigationMenu className="fixed z-50 bg-[#26262680] backdrop-blur-md border-b border-[#262626cc]">
+    <nav className="fixed z-20 w-full bg-gray-100 dark:bg-[#26262680] backdrop-blur-md"> 
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center h-16 px-4">
-        <NavigationMenuList>
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/about-at">About at</NavLink>
-          <NavLink href="/contact">Contact</NavLink>
-        </NavigationMenuList>
-        <NavigationMenuList>
-          <ModeToggle/>
-        </NavigationMenuList>
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Home  
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/about-us" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  About us 
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/contact" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Contact  
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <ModeToggle/>
       </div>
-    </NavigationMenu>
+    </nav>
   )
 }
 
