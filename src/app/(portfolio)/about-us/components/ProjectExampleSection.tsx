@@ -35,10 +35,7 @@ export default function ProjectExampleSection() {
   ];
 
   return (
-    <div className="w-full max-w-[1000px] mx-auto">
-      <h1 className="p-10 py-20 text-3xl">Projects examples</h1>
-      <FocusCards cards={cards} />
-    </div>
+    <FocusCards cards={cards} />
   );
 }
 

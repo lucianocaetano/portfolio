@@ -2,6 +2,7 @@ import {TracingBeam} from '@/components/ui/tracing-beam'
 import { HeroSection } from './components/HeroSection'
 import ServiceSection from './components/ServiceSection'
 import ProjectExampleSection from './components/ProjectExampleSection'
+import MethodologySection from './components/MethodologySection'
 
 const AboutPage: React.FC = () => {
   return (
@@ -12,7 +13,11 @@ const AboutPage: React.FC = () => {
       >
         <ServiceSection/>
       </TracingBeam>
-      <ProjectExampleSection/>
+      <div className="w-full max-w-[1000px] mx-auto">
+        <h1 className="p-10 py-20 text-3xl">Projects examples</h1>
+        <ProjectExampleSection/>
+        <MethodologySection/>
+      </div>
     </div>
   )
 }
