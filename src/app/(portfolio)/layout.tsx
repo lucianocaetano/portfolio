@@ -1,4 +1,4 @@
-import {Footer} from "@/components/ui/footer"
+import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 import {ShootingStars} from "@/components/ui/shooting-stars"
 import {StarsBackground} from "@/components/ui/stars-background"

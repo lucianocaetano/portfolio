@@ -1,5 +1,4 @@
 "use client";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
 
 interface SlideData {
@@ -106,9 +105,8 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         </div>
 
         <article
-          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
-            current === index ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
+          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${current === index ? "opacity-100 visible" : "opacity-0 invisible"
+            }`}
         >
           <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold  relative">
             {title}
@@ -131,7 +129,7 @@ export default function Carousel({ slides }: CarouselProps) {
       handleNextClick();
     }, 3000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [current]);
 
   const handleNextClick = () => {
