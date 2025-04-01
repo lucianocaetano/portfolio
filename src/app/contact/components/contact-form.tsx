@@ -1,20 +1,20 @@
 import * as React from "react";
-import { Button } from "@/app/(portfolio)/contact/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { 
   Card, 
   CardContent, 
   CardFooter, 
   CardHeader, 
   CardTitle 
-} from "@/app/(portfolio)/contact/components/ui/card";
-import { Input } from "@/app/(portfolio)/contact/components/ui/input";
-import { Label } from "@/app/(portfolio)/contact/components/ui/label";
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Textarea } from "./ui/textarea";
 
 export function ContactForm() {
   return (
-    <div className="flex justify-end items-start mb-auto"> 
-      <Card className="w-96 max-w-2xl flex flex-col space-y-6 p-8 shadow-amber-400 hover ">
+    <div className="mt-20"> 
+      <Card className="w-full md:w-96 max-w-2xl flex flex-col space-y-6 p-8 shadow-amber-400 hover ">
         <CardHeader>
           <CardTitle className="text-2xl text-center">Contact</CardTitle> 
         </CardHeader>
