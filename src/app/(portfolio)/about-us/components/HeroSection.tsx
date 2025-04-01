@@ -68,7 +68,7 @@ export const HeroSection = ({
   return (
     <div
       ref={ref}
-      className={cn("flex min-h-[150vh] md:min-h-[200vh] shrink-0 transform flex-col items-center justify-start md:pt-60 [perspective:800px] scale-60 md:scale-80 lg:scale-100")}
+      className={cn("flex min-h-[1600px] md:min-h-[2000px] shrink-0 transform flex-col items-center justify-start md:pt-60 [perspective:800px] scale-60 md:scale-80 lg:scale-90")}
     >
       <motion.h2
         style={{
