@@ -8,7 +8,7 @@ const ContactPage: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="px-6 w-full max-w-7xl mx-auto max-md:flex-col-reverse flex justify-between mt-16">
+      <div className="px-6 w-full max-w-7xl mx-auto max-md:flex-col flex justify-between my-16">
         <div>
           <TypographyH1>Contact Us</TypographyH1>
           <TypographyP>Feel free to reach out to us!</TypographyP>

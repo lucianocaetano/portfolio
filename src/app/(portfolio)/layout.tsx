@@ -7,15 +7,8 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <Navbar/>
-
-      <div className="pt-[100px]">
-        {children}
-      </div>
- 
+      {children}
       <Footer/>
-
-      <ShootingStars />
-      <StarsBackground />
     </div>
   )
 }
