@@ -14,7 +14,7 @@ import { Textarea } from "./ui/textarea";
 export function ContactForm() {
   return (
     <div className="mt-20"> 
-      <Card className="w-full md:w-96 max-w-2xl flex flex-col space-y-6 p-8 shadow-amber-400 hover ">
+      <Card className="w-full md:w-96 max-w-2xl flex flex-col space-y-6 p-8 shadow-yellow-400 dark:shadow-amber-400 hover">
         <CardHeader>
           <CardTitle className="text-2xl text-center">Contact</CardTitle> 
         </CardHeader>

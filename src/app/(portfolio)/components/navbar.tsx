@@ -1,3 +1,4 @@
+import SelectLanguage from "@/components/select-language"
 import {ModeToggle} from "@/components/ui/dark-mode-button"
 import {
   NavigationMenu,
@@ -12,7 +13,7 @@ import Link from "next/link"
 const Navbar = () => {
 
   return (
-    <nav className="fixed z-20 w-full backdrop-blur-md"> 
+    <nav className="fixed z-20 w-full bg-white dark:bg-transparent dark:backdrop-blur-md"> 
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center h-16 px-4">
         <div>
           <NavigationMenu>
@@ -41,7 +42,10 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <ModeToggle/>
+        <div className="flex gap-8">
+          <SelectLanguage/>
+          <ModeToggle/>
+        </div>
       </div>
     </nav>
   )

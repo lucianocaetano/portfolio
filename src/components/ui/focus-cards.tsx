@@ -58,7 +58,7 @@ export const Card = React.memo(
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="h-[90%]">
+      <DialogContent className="h-[90%] max-h-[1000px]">
         <div
           className={cn(
             "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-full w-full",
