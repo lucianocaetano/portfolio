@@ -1,8 +1,8 @@
 import { ContactForm } from "./components/contact-form";
 import { TypographyH1 } from "./typography/H1";
 import { TypographyP } from "./typography/P";
-import { Mail, MapPin, Phone } from "lucide-react";
 import Navbar from "../(portfolio)/components/navbar";
+import Image from "next/image";
 
 const ContactPage: React.FC = () => {
   return (
@@ -14,23 +14,13 @@ const ContactPage: React.FC = () => {
           <TypographyP>Feel free to reach out to us!</TypographyP>
           <br />
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2">
-              <Phone className="w-6 h-6 text-orange-400" />
-              <span>Phone: +1 234 567 890</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail className="w-6 h-6 text-orange-400" />
-              <span>Email: contact@example.com</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-6 h-6 text-orange-400" />
-              <span>Address: 123 Main St, City</span>
-            </div>
+            <Image src="/contact_dark.jpg" width={260} height={100} alt="contact" className="hidden dark:block" />
+            <Image src="/contact.jpg" width={260} height={100} alt="contact" className="block dark:hidden pt-[0.9px]"/>
           </div>
         </div>
         <ContactForm />
       </div>
-    </div>
+      </div>
   );
 };
 

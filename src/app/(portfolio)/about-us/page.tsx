@@ -6,7 +6,7 @@ import ProjectExampleSection from './components/ProjectExampleSection'
 
 const AboutPage: React.FC = () => {
   return (
-    <div>
+    <>
       <Banner/>
       <HeroSection />
       <TracingBeam
@@ -14,11 +14,11 @@ const AboutPage: React.FC = () => {
       >
         <ServiceSection/>
       </TracingBeam>
-      <div className="w-full max-w-[1000px] mx-auto">
-        <h1 className="p-10 py-20 text-3xl">Projects examples</h1>
+      <div className="w-full max-w-[1000px] mx-auto mb-20">
+        <h1 className="p-10 py-20 text-5xl">Our work examples</h1>
         <ProjectExampleSection/>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -47,7 +47,7 @@ export const AnimatedTestimonials = ({
 
   return (
     <div className="mx-auto font-sans max-md:max-w-[300px]">
-      <h1 className="my-4 text-2xl text-center">Our team:</h1>
+      <h1 className="my-4 text-3xl text-center">Our team</h1>
       <div className="relative grid md:gap-20 grid-cols-1 md:grid-cols-2">
         <div className="relative h-80 w-full"> 
             <AnimatePresence>

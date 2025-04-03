@@ -38,7 +38,7 @@ export default function Page() {
   return (
      <div>
       <Navbar/>
-      <div className="pt-[100px]">
+      <div className="pt-[70px]">
         <HeroSectionHome/>
       </div>
       <Footer/>
