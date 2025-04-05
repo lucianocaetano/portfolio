@@ -47,6 +47,19 @@ const dummyContent = [
       "/frontend_banner.gif",
   },
   {
+    title: "E-commerce",
+    description: (
+      <>
+        <p>
+          Looking to launch or update your e-commerce platform? Our team of expert developers specializes in creating high-performance, secure, and scalable e-commerce solutions using the most powerful technologies on the market: Node.js, React, Next.js, and Laravel. Whether you're starting from scratch or needing to optimize an existing platform, we offer comprehensive expertise.        
+        </p>
+      </>
+    ),
+    badge: "Launch Week",
+    image:
+      "/ecommerce_banner.gif",
+  },
+  {
     title: "Documented Rest APIs",
     description: (
       <>
@@ -75,6 +88,19 @@ const dummyContent = [
     badge: "Launch Week",
     image:
       "/responsive_design_banner.gif",
+  },
+  {
+    title: "UX/UI Design",
+    description: (
+      <>
+        <p>
+          In today’s competitive digital landscape, great design is not just about looks — it’s about creating experiences that drive engagement and conversions. Our team of passionate designers and developers specializes in crafting intuitive, user-centered, and visually stunning UI/UX for web and mobile applications.
+        </p>
+      </>
+    ),
+    badge: "Launch Week",
+    image:
+      "/uiux_banner.gif",
   },
 ];
 
