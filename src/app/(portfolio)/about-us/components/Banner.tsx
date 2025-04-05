@@ -27,9 +27,8 @@ const Banner = () => {
           <source src="/video_banner.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex items-center justify-center text-white text-center backdrop-blur-md">
-          <div className="max-sm:scale-70 w-full max-w-4xl rounded-lg">
-            <TextGenerateEffect duration={2} filter={false} words="We are SilverRiverSoftware, a full-stack web development team" className="text-white text-4xl"/>
-            <p className="mt-4 text-lg md:text-xl"></p>
+          <div className="max-sm:scale-60 w-full rounded-lg">
+            <TextGenerateEffect duration={2} filter={false} words="We are SilverRiverSoftware, a full-stack web development team"/>
           </div>
         </div>
       </div>

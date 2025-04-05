@@ -35,7 +35,7 @@ export default function FooterSection({
       title: "Links",
       links: [
         { text: "Home", href: "/" },
-        { text: "About-at", href: "/about-at" },
+        { text: "About-us", href: "/about-us" },
         { text: "Contact", href: "/contact" },
       ],
     },
