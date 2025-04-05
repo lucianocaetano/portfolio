@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "motion/react";
 import { cn } from "@/lib/utils";
 import {
@@ -26,7 +26,6 @@ import { IconCaretDownFilled } from "@tabler/icons-react";
 import {AnimatedTestimonials} from "@/components/ui/animated-testimonials";
 
 export const HeroSection = ({
-  src,
   showGradient,
   title,
   badge,
@@ -63,7 +62,6 @@ export const HeroSection = ({
   const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   return (
     <div
@@ -73,7 +71,6 @@ export const HeroSection = ({
       <motion.h2
         style={{
           translateY: textTransform,
-          opacity: textOpacity,
         }}
         className="mb-20 text-center text-3xl font-bold text-neutral-800 dark:text-white"
       >
@@ -85,7 +82,6 @@ export const HeroSection = ({
       </motion.h2>
       {/* Lid */}
       <Lid
-        src={src}
         scaleX={scaleX}
         scaleY={scaleY}
         rotate={rotate}
@@ -125,13 +121,11 @@ export const Lid = ({
   scaleY,
   rotate,
   translate,
-  src,
 }: {
   scaleX: MotionValue<number>;
   scaleY: MotionValue<number>;
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
-  src?: string;
 }) => {
    const testimonials = [
     {

@@ -38,59 +38,43 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
+          On the front end, we design intuitive, attractive, and fully responsive interfaces, ensuring that every user enjoys a fluid experience regardless of their device. We work with modern technologies such as React, Next.js, and TypeScript, always taking care of every visual and accessibility detail.
         </p>
       </>
     ),
     badge: "React",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/frontend_banner.gif",
   },
   {
     title: "Documented Rest APIs",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+          On the backend, we develop robust, scalable, and secure solutions using 
+          technologies such as Laravel and Node.js. We focus on writing clean and
+          modular code, prioritizing performance and maintainability. We also
+          document each API clearly and professionally (using tools like
+          Swagger/OpenAPI), allowing other developers to integrate quickly and seamlessly.
         </p>
       </>
     ),
     badge: "Changelog",
     image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/backend_api_banner.gif",
   },
   {
     title: "Responsive Design",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+         In a world where the majority of web traffic comes from mobile devices, responsive design isn&apos;t an option—it&apos;s a necessity. We&apos;ll create interfaces that adapt perfectly to any screen size, from smartphones and tablets to desktop monitors.
         </p>
       </>
     ),
     badge: "Launch Week",
     image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/responsive_design_banner.gif",
   },
 ];
 

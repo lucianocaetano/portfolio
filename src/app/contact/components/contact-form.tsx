@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "./ui/textarea";
+import { Textarea } from "@/components/ui/textarea";
 
 export function ContactForm() {
   return (
@@ -23,11 +23,15 @@ export function ContactForm() {
             <div className="grid w-full items-center gap-6"> 
               <div className="flex flex-col space-y-2">
                 <Label htmlFor="name" className="text-lg">Your email:</Label> 
-                <Input id="name" placeholder="Name of your project" className="h-12 text-lg" /> 
+                <Input id="name" placeholder="Name of your project" required className="h-12 text-lg" /> 
+              </div>
+              <div className="flex flex-col space-y-2">
+                <Label htmlFor="enterprise" className="text-lg">Your enterprise(optional):</Label> 
+                <Input id="enterprise" placeholder="Name of your project" className="h-12 text-lg" /> 
               </div>
               <div className="flex flex-col space-y-2">
                 <Label htmlFor="email" className="text-lg">Content:</Label> 
-                <Textarea id="email" placeholder="Write your message here" className="h-32 text-lg" /> 
+                <Textarea id="email" placeholder="Write your message here" required className="h-32 text-lg" /> 
               </div>
             </div>
           </form>

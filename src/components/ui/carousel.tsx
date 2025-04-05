@@ -1,5 +1,6 @@
 "use client";
-import { useState, useRef, useId, useEffect } from "react";
+import Image from "next/image";
+import { useState, useRef, useId, useEffect, useCallback } from "react";
 
 interface SlideData {
   title?: string;
@@ -88,12 +89,14 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                 : "none",
           }}
         >
-          <img
+          <Image
             className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+            width={1500}
+            height={1500}
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
-            alt={title}
+            alt={title as string}
             src={src}
             onLoad={imageLoaded}
             loading="eager"
@@ -124,18 +127,18 @@ interface CarouselProps {
 export default function Carousel({ slides }: CarouselProps) {
   const [current, setCurrent] = useState(0);
 
+  const handleNextClick = useCallback(() => {
+    const next = current + 1;
+    setCurrent(next === slides.length ? 0 : next);
+  }, [current, slides.length]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextClick();
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [current]);
-
-  const handleNextClick = () => {
-    const next = current + 1;
-    setCurrent(next === slides.length ? 0 : next);
-  };
+  }, [current, handleNextClick]);
 
   const handleSlideClick = (index: number) => {
     if (current !== index) {

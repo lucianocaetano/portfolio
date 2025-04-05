@@ -1,7 +1,7 @@
-import { ContactForm } from "@/app/(portfolio)/contact/components/contact-form";
-import { TypographyH1 } from "@/app/(portfolio)/contact/typography/H3";
+import { ContactForm } from "@/app/contact/components/contact-form";
+import { TypographyH1 } from "@/app/contact/typography/H1";
 import Navbar from "@/app/(portfolio)/components/navbar";
-import { TypographyP } from "@/app/(portfolio)/contact/typography/P";
+import { TypographyP } from "@/app/contact/typography/P";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const ContactPage: React.FC = () => {

@@ -8,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import Image from "next/image"
 
 export default function SelectLanguage() {
   return (
@@ -19,12 +20,12 @@ export default function SelectLanguage() {
         <SelectGroup>
           <SelectItem value="english">
             <span className="mr-2">
-              <img src="/english.png" width={20} alt=""/>
+              <Image src="/english.png" width={20} height={20} alt=""/>
             </span>
             English
           </SelectItem>
           <SelectItem value="spanish">
-            <img src="/spanish.png" width={20} alt=""/>
+            <Image src="/spanish.png" width={20} height={20} alt=""/>
             Español
           </SelectItem>
         </SelectGroup>
