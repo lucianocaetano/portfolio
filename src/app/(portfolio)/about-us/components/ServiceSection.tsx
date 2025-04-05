@@ -51,7 +51,7 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Looking to launch or update your e-commerce platform? Our team of expert developers specializes in creating high-performance, secure, and scalable e-commerce solutions using the most powerful technologies on the market: Node.js, React, Next.js, and Laravel. Whether you're starting from scratch or needing to optimize an existing platform, we offer comprehensive expertise.        
+          Looking to launch or update your e-commerce platform? Our team of expert developers specializes in creating high-performance, secure, and scalable e-commerce solutions using the most powerful technologies on the market: Node.js, React, Next.js, and Laravel. Whether you&apo&apos;re starting from scratch or needing to optimize an existing platform, we offer comprehensive expertise.        
         </p>
       </>
     ),
